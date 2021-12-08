@@ -18,7 +18,7 @@ with open("data/day4.txt", "r") as file:
     # convert strings into lists
     boards = [[item.split(" ") for item in board] for board in boards]
     # get rid of those pesky little extra spaces
-    boards = [[list(filter(lambda a: a != '', item)) for item in board] for board in boards]
+    boards = [[list(filter(lambda a: a != '', row)) for row in board] for board in boards]
     boards = np.array(boards, dtype=int)
 
 
@@ -32,7 +32,7 @@ def check_bingo(all_marks):
     bingo = False
     index = None
 
-    direction = {"rows": np.zeros(all_marks.shape, dtype=bool), "columns": np.zeros(all_marks.shape, dtype=bool)}
+    # direction = {"rows": np.zeros(all_marks.shape, dtype=bool), "columns": np.zeros(all_marks.shape, dtype=bool)}
 
     for axis, across in zip([1, 0], ["rows", "columns"]):
         for i, board in enumerate(all_marks):
