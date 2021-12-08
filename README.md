@@ -21,3 +21,5 @@ advent_of_code
     │   day2.py
     │   ...
 ```
+Note: All codes assume the working directory to be the project's
+root directory.
