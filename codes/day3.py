@@ -45,7 +45,7 @@ gamma_rate_decimal = int("".join(gamma_rate), 2)
 epsilon_rate_decimal = int("".join(epsilon_rate), 2)
 # Multiply both decimal representations for result
 result_part_1 = gamma_rate_decimal * epsilon_rate_decimal
-print(f"The result for part 1 is: {result_part_1}")
+print(f"The result for part one is: {result_part_1}")
 
 
 def bit_criteria(arr, i, which="oxygen"):
@@ -96,4 +96,4 @@ oxygen_rating_decimal = int("".join([str(item) for item in results["oxygen"][0]]
 co2_scrubber_rating_decimal = int("".join([str(item) for item in results["co2_scrubber"][0]]), 2)
 # Multiply for final result
 result_part_2 = oxygen_rating_decimal * co2_scrubber_rating_decimal
-print(f"The result for part 2 is: {result_part_2}")
+print(f"The result for part two is: {result_part_2}")

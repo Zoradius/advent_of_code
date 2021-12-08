@@ -31,12 +31,12 @@ def compare_consecutive_entries(array):
 
 
 solution_part_1 = compare_consecutive_entries(data)
-
+print(f"The solution for part one is: {solution_part_1}")
 # Part 2
 # Funnily enough, I did use this sliding window stuff a few weeks ago. Turns out the newest numpy version has a build-in
 # method for that, but at the time that version wasn't on pip yet. It is now however, so this requires numpy >= 1.20.0
 windows = np.lib.stride_tricks.sliding_window_view(data, 3)
 summed_windows = np.array(list(map(np.sum, windows)))
 solution_part_2 = compare_consecutive_entries(summed_windows)
-
-# Again this can be crammed into one line but alas.
+print(f"The solution for part two is: {solution_part_2}")
+# Again this can be crammed into one line but alas I'm too lazy to write it out.

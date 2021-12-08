@@ -46,7 +46,7 @@ for point in data:
     parse_command(*point, position=pos_1)
 
 result_part_1 = pos_1["horizontal"] * pos_1["depth"]
-
+print(f"The solution to part one is: {result_part_1}")
 
 # Part 2
 
@@ -55,3 +55,4 @@ for point in data:
     parse_command(*point, position=pos_2)
 
 result_part_2 = pos_2["horizontal"] * pos_2["depth"]
+print(f"The solution to part two is: {result_part_2}")
