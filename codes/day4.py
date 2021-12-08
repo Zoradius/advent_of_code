@@ -32,6 +32,7 @@ def check_bingo(all_marks):
     bingo = False
     index = None
 
+    # This and the zip will later be used in part two, to keep track of where the bingo occurred
     # direction = {"rows": np.zeros(all_marks.shape, dtype=bool), "columns": np.zeros(all_marks.shape, dtype=bool)}
 
     for axis, across in zip([1, 0], ["rows", "columns"]):
